@@ -14,13 +14,17 @@
 ```
         roslaunch livox_repub livox_repub.launch
 ```
+## 发布CustomMsg的话题/livox/lidar
+可连接Livox激光雷达，通过livox-driver发布；或通过录制好的bag，用rosbag play发布
+
 注意：这个包是要先订阅CustomMsg的话题/livox/lidar，然后发布PointCloud2格式的"/livox_pc2"话题，所以不论是实时驱动livox-driver还是通过bag包发布/livox/lidar，都需要确保有/livox/lidar才能有转换结果
+
 转换后的PointCloud2点云可以通过rviz显示
 终端输入：
 ```
         rviz
 ```
-Fixed Frame设置为"//livox"（Noetic需要双斜杠），点云设置为 "livox_pc2"
+Fixed Frame设置为"//livox_frame"（Noetic需要双斜杠），点云设置为 "livox_pc2"
 
 ## 转为PCL pcd文件：
 启动一个终端，输入：
