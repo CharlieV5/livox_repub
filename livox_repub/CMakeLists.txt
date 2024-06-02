@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(livox_repub)
 
-SET(CMAKE_BUILD_TYPE "Debug")
+SET(CMAKE_BUILD_TYPE "Release")
 
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fexceptions")
@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
-find_package(OpenCV REQUIRED)
+# find_package(OpenCV REQUIRED)
 
 include_directories(
 	${catkin_INCLUDE_DIRS} 
@@ -39,5 +39,5 @@ catkin_package(
 )
 
 add_executable(livox_repub livox_repub.cpp)
-target_link_libraries(livox_repub ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(livox_repub ${catkin_LIBRARIES} ${PCL_LIBRARIES} )
 

@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/media/w/WMobile/Code/Livox/ws-livox/devel/lib/python3/dist-packages",
+        "/home/w/Livox/ws-livox2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/media/w/WMobile/Code/Livox/ws-livox/devel/lib/python3/dist-packages",
+        "/home/w/Livox/ws-livox2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

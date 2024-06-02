@@ -24,7 +24,7 @@
 ```
         rviz
 ```
-Fixed Frame设置为"//livox_frame"（Noetic需要双斜杠），点云设置为 "livox_pc2"
+Fixed Frame设置为"livox_frame"，点云设置为 "/livox_pc2"
 
 ## 转为PCL pcd文件：
 启动一个终端，输入：
